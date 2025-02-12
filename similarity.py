@@ -1,9 +1,9 @@
 # -------------------------------------------------------------------------
-# AUTHOR: your name
-# FILENAME: title of the source file
-# SPECIFICATION: description of the program
+# AUTHOR: Sheldin Lau
+# FILENAME: similarity.py
+# SPECIFICATION: Building Document-Term Matrix and using Cosine Similarity for Document Similarity
 # FOR: CS 5990 (Advanced Data Mining) - Assignment #1
-# TIME SPENT: how long it took you to complete the assignment
+# TIME SPENT: 5 Hours
 # -----------------------------------------------------------*/
 
 #IMPORTANT NOTE: DO NOT USE ANY ADVANCED PYTHON LIBRARY TO COMPLETE THIS CODE SUCH AS numpy,
