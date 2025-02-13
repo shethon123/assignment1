@@ -61,14 +61,17 @@ for i in range(len(documents)):
 highestcosine = 0
 doc1 = 0
 doc2 = 1
-for i in range(len(documents)):
-  for j in range(i+1,len(documents)):
-    cosinesimilarity = cosine_similarity([docTermMatrix[i]],[docTermMatrix[j]])[0][0]
-    if cosinesimilarity > highestcosine:
-      highestcosine = cosinesimilarity
-      doc1 = i+1
-      doc2 = j+1
+cosinesimilarity = cosine_similarity(docTermMatrix)
 
+for i in range(len(documents)):
+  for j in range(len(documents)):
+    if i == j:
+      continue
+    else:
+      if cosinesimilarity[i][j] > highestcosine:
+        doc1 = i+1
+        doc2 = j+1
+        highestcosine = cosinesimilarity[i][j]
 
 # Print the highest cosine similarity following the information below
 # The most similar documents are document 10 and document 100 with cosine similarity = x
